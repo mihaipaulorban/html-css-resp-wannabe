@@ -132,3 +132,44 @@ img {
  .container {
     width: 100%;
  }
+
+ @media screen and (max-width: 768px) {
+    .why-us .col-left img {
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .steps .col {
+            width: 100%;
+        }
+        .steps .col img {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col {
+        width: 100%;
+        padding: 1rem 0;
+        flex-direction: column; 
+        display: flex;
+    }
+
+    .steps .col img {
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
