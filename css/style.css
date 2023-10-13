@@ -163,6 +163,7 @@ img {
         padding: 1rem 0;
         flex-direction: column; 
         display: flex;
+        justify-content: center;
     }
 
     .steps .col img {
@@ -171,5 +172,10 @@ img {
 
     .row {
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .why-us {
+        background-color: black;
     }
 }
