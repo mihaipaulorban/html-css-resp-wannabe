@@ -1,181 +1,211 @@
 /*************************************************
     GENERAL STYLES
  *************************************************/
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #b8c1ec;
-    background: #232946;
-}
-
-h1,
-h2,
-h3 {
-    color: #eebbc3;
-}
-
-h1 {
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
-
-h2 {
-    margin-bottom: 2.5rem;
-    font-size: 2rem;
-    color: #fffffe;
-}
-
-h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-img {
-    max-width: 100%;
-}
-
-/************************************************
-    UTILITIES
- ************************************************/
-
-/* LAYOUT */
-.container {
-    width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.row {
-    display: flex;
-}
-
-.col {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* TEXT */
-.text-center {
-    text-align: center;
-}
-
-/************************************************
-    SITE SECTIONS
- ************************************************/
-
-/* HEADER */
-.site-header {
-    margin-top: 3rem;
-}
-
-/* LESSONS SECTION */
-.lessons .col {
-    width: 50%;
-}
-
-.lessons .col img {
-    height: 200px;
-    margin-bottom: 1rem;
-}
-
-/* STEPS SECTION */
-.steps {
-    margin: 3rem 0;
-    padding: 3rem 0;
-    color: #232946;
-    background: #eebbc3;
-}
-
-.steps h2,
-.steps h3 {
-    color: #232946;
-}
-
-.steps .col {
-    width: calc(100% / 3);
-}
-
-.steps .col img {
-    height: 200px;
-    margin-bottom: 1rem;
-}
-
-/* WHY US SECTION */
-.why-us {
-    margin-bottom: 3rem;
-}
-.why-us .col-left {
-    width: 40%;
-}
-
-.why-us .col-right {
-    width: 60%;
-}
-
-.why-us li {
-    list-style: none;
-    margin-bottom: 2.5rem;
-}
-
-/************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
-
-
- .container {
-    width: 100%;
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
  }
-
+ 
+ body {
+     font-family: 'Nunito Sans', sans-serif;
+     color: #b8c1ec;
+     background: #232946;
+ }
+ 
+ h1,
+ h2,
+ h3 {
+     color: #eebbc3;
+ }
+ 
+ h1 {
+     margin-bottom: 3rem;
+     font-size: 2.5rem;
+ }
+ 
+ h2 {
+     margin-bottom: 2.5rem;
+     font-size: 2rem;
+     color: #fffffe;
+ }
+ 
+ h3 {
+     margin-bottom: 1rem;
+     font-size: 1.5rem;
+ }
+ 
+ img {
+     max-width: 100%;
+ }
+ 
+ /************************************************
+     UTILITIES
+  ************************************************/
+ 
+ /* LAYOUT */
+ .container {
+     width: 1140px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+ 
+ .row {
+     display: flex;
+ }
+ 
+ .col {
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+ 
+ /* TEXT */
+ .text-center {
+     text-align: center;
+ }
+ 
+ /************************************************
+     SITE SECTIONS
+  ************************************************/
+ 
+ /* HEADER */
+ .site-header {
+     margin-top: 3rem;
+ }
+ 
+ /* LESSONS SECTION */
+ .lessons .col {
+     width: 50%;
+ }
+ 
+ .lessons .col img {
+     height: 200px;
+     margin-bottom: 1rem;
+ }
+ 
+ /* STEPS SECTION */
+ .steps {
+     margin: 3rem 0;
+     padding: 3rem 0;
+     color: #232946;
+     background: #eebbc3;
+ }
+ 
+ .steps h2,
+ .steps h3 {
+     color: #232946;
+ }
+ 
+ .steps .col {
+     width: calc(100% / 3);
+ }
+ 
+ .steps .col img {
+     height: 200px;
+     margin-bottom: 1rem;
+ }
+ 
+ /* WHY US SECTION */
+ .why-us {
+     margin-bottom: 3rem;
+ }
+ .why-us .col-left {
+     width: 40%;
+ }
+ 
+ .why-us .col-right {
+     width: 60%;
+ }
+ 
+ .why-us li {
+     list-style: none;
+     margin-bottom: 2.5rem;
+ }
+ 
+ /************************************************
+     SOLUZIONE RESPONSIVE
+  ************************************************/
+ 
+ .container {
+     width: 100%;
+ }
+ 
  @media screen and (max-width: 768px) {
-    .why-us .col-left img {
-        max-width: 50%;
-    }
+     .why-us .col-left img {
+         max-width: 80%;
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+     .container {
+         width: 100%;
+         padding: 0;
+         align-items: center;
+         justify-content: center;
+         display: flex;
+     }
+ 
+     .col {
+         width: 100%;
+         padding: 1rem 0;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         display: flex;
+     }
 
-    @media screen and (max-width: 768px) {
-        .steps .col {
-            width: 100%;
-        }
-        .steps .col img {
-            height: auto;
-        }
-    }
-}
+     h2 {
+        text-align: center;
+        margin: 10 0;
 
-@media screen and (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 0;
+     }
+
+     .card{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
+     }
+     .steps .col img {
+         height: auto;
+     }
 
-    .col {
-        width: 100%;
-        padding: 1rem 0;
-        flex-direction: column; 
-        display: flex;
-        justify-content: center;
-    }
+     .text {
+        font-size: 10px;
+     }
 
-    .steps .col img {
-        height: auto;
-    }
+     .title {
+        font-size: 17px;
 
-    .row {
+     }
+     
+     .container h2 {
+        font-size: 21px;
+     }
+
+     .lessons .container,
+     .steps .container,
+     .why-us .container {
         flex-direction: column;
         justify-content: center;
-    }
+        align-items: center;
+     }
+ 
+     .row {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+ 
+     .why-us {
+         background-color: rgb(26, 26, 26);
+         margin: 0;
+         padding-top: 20px;
+     }
 
-    .why-us {
-        background-color: black;
-    }
-}
+     .steps{
+        margin: 0;
+     }
+ }
